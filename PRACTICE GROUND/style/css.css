@@ -1,0 +1,12 @@
+h1{
+    font: size 10px;
+    text-align: center;
+}
+
+.right-aligned{
+    text-align: right;
+}
+
+.justified{
+    text-align: justify;
+}

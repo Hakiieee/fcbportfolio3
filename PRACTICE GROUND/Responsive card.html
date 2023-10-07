@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive cards</title>
+    <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="card1.jpg" alt="Card Image 1">
+            <div class="description">
+                <h2>Pookie bear</h2>
+                <p>This card inside has the pictures that I play.</p>
+                <a href="#" class="learn-more" id="card1">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="card2.jpg" alt="Card Image 2">
+            <div class="description">
+                <h2>Bun bun loves heart</h2>
+                <p>Description of Card 2 goes here.</p>
+                <a href="#" class="learn-more" id="card2">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="card3.jpg" alt="Card Image 3">
+            <div class="description">
+                <h2>Bunny bun</h2>
+                <p>Description of Card 3 goes here.</p>
+                <a href="#" class="learn-more" id="card3">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="card4.jpg" alt="Card Image 4">
+            <div class="description">
+                <h2>Cinnamon</h2>
+                <p>Nothing to see in this card. </p>
+                <a href="#" class="learn-more" id="card4">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="card5.jpg" alt="Card Image 5">
+            <div class="description">
+                <h2>Click me here</h2>
+                <p>me</p>
+                <a href="page5.html" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('card1').addEventListener('click', function(event) {
+            event.preventDefault();
+            openPopup('Pookie bear is happy to see you!');
+            document.body.classList.add('card-clicked');
+        });
+    
+        document.getElementById('card2').addEventListener('click', function(event) {
+            event.preventDefault();
+            openPopup('Bunbun is making more hearts. go away');
+            document.body.classList.add('card-clicked');
+        });
+    
+        document.getElementById('card3').addEventListener('click', function(event) {
+            event.preventDefault();
+            openPopup('Bunny bun is sleeping, please be quiet.');
+            document.body.classList.add('card-clicked');
+        });
+    
+        document.getElementById('card4').addEventListener('click', function(event) {
+            event.preventDefault();
+            openPopup('Cinnamon is baking and making new recipes, Do not Disturb!');
+            document.body.classList.add('card-clicked');
+        });
+
+        function openPopup(message) {
+    var popupWindow = window.open('', '_blank', 'width=550,height=250');
+    popupWindow.document.write('<div style="background-color: #800080; padding: 20px; text-align: center; font-family: \'Comic Sans MS\', cursive;">');
+    popupWindow.document.write('<h1 style="color: #fff;">Warning!</h1>');
+    popupWindow.document.write('<p style="color: #fff;">' + message + '</p>');
+    popupWindow.document.write('</div>');
+}
+
+    </script>
+</body>
+</html>

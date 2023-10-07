@@ -1,0 +1,86 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    text-shadow: 5px 5px 5px;
+}
+
+h1:hover{
+    box-shadow: 5px 5px 5px darkgreen;
+}
+
+/* Basic styling */
+body {
+    font-family: consolas, Arial, Helvetica, sans-serif;
+    background-image:url("BGWEBSITE.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(to right, skyblue,green);
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #328143;
+    padding: 1rem 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: skyblue;
+    color: #042600;
+}
+
+section {
+    padding: 2rem;
+    background: linear-gradient(to right, skyblue,green);
+    background-repeat: no-repeat;
+    margin: 2rem;
+    border-radius: 5px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(to right, skyblue,green);
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+a.link {
+    color: green;
+}
+a.visited{
+    color: gray;
+}
+a.hover{
+    color: skyblue;
+}
+a.active{
+    color: yellow;
+}
